@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Cell 1</string>
+		<key>keyboardType</key>
+		<integer>1</integer>
+		<key>keyboardReturnKeyType</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Cell 2</string>
+		<key>keyboardType</key>
+		<integer>1</integer>
+		<key>keyboardReturnKeyType</key>
+		<integer>4</integer>
+	</dict>
+</array>
+</plist>
