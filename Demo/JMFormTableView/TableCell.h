@@ -14,9 +14,15 @@
 #define PLIST_KEYBOARD_TYPE_KEY        @"keyboardType"
 #define PLIST_KEYBOARD_RETURN_TYPE_KEY @"keyboardReturnKeyType"
 
-@interface TableCell : UITableViewCell <UITextFieldDelegate>
+@interface TableCell : UITableViewCell
 
 // Custom Methods
 - (void)configureCellWithData:(NSDictionary *)aDic;
+
+// Property
+@property (nonatomic, strong) NSDictionary *currentData;
+
+// IBOutlet
+@property (nonatomic, weak) IBOutlet UITextField *textField;
 
 @end
