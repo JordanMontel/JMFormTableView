@@ -19,7 +19,7 @@
 
 #pragma mark - Custom Methods
 - (void)configureCellWithData:(NSDictionary *)aDic
-{
+{    
     // Hold current data
     _currentData     = aDic;
     
