@@ -6,6 +6,8 @@
 //  Copyright 2014 Jordan Montel. All rights reserved.
 //
 
-@interface TableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+#import "JMEnhancedKeyboardDelegate.h"
+
+@interface TableViewController : UITableViewController <JMEnhancedKeyboardDelegate, UITextFieldDelegate>
 
 @end
