@@ -20,11 +20,11 @@
     NSMutableArray *toolbarItems = [[NSMutableArray alloc] init];
     
     // Next/Previous buttons
-    UISegmentedControl *leftItems = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:LOCALIZED_STRING(@"globals.previous"), LOCALIZED_STRING(@"globals.next"), nil]];
+    UISegmentedControl *leftItems = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:NSLocalizedString(@"Previous", @""), NSLocalizedString(@"Next", @""), nil]];
     [leftItems setEnabled:previousEnabled forSegmentAtIndex:0];
     [leftItems setEnabled:nextEnabled forSegmentAtIndex:1];
-    leftItems.momentary = YES; // do not preserve button's state
-    [leftItems addTarget:self action:@selector(nextPrevHandlerDidChange:) forControlEvents:UIControlEventValueChanged];
+    leftItems.momentary = YES;
+    [leftItems addTarget:self action:@selector(nextPreviousButtonsTouched:) forControlEvents:UIControlEventValueChanged];
     
     UIBarButtonItem *nextPrevControl = [[UIBarButtonItem alloc] initWithCustomView:leftItems];
     [toolbarItems addObject:nextPrevControl];
@@ -45,7 +45,7 @@
     return toolbar;
 }
 
-- (void)nextPrevHandlerDidChange:(id)sender
+- (void)nextPreviousButtonsTouched:(id)sender
 {
     if (!self.delegate)
         return;
