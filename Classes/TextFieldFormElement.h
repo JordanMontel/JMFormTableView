@@ -9,6 +9,6 @@
 @interface TextFieldFormElement : NSObject
 
 @property (strong, nonatomic) NSDictionary *currentData;
-@property (strong, nonatomic) UITextField *textField;
+@property (strong, nonatomic) UITextField  *textField;
 
 @end
