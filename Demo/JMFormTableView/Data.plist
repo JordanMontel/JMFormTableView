@@ -144,16 +144,6 @@
 	</dict>
 	<dict>
 		<key>uid</key>
-		<string>12</string>
-		<key>title</key>
-		<string>Cell 12</string>
-		<key>keyboardType</key>
-		<string>UIKeyboardTypeDefault</string>
-		<key>returnKeyType</key>
-		<string>UIReturnKeyNext</string>
-	</dict>
-	<dict>
-		<key>uid</key>
 		<string>13</string>
 		<key>title</key>
 		<string>Cell 14</string>
