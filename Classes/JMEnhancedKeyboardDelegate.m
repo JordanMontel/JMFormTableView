@@ -10,7 +10,7 @@
 
 @implementation JMEnhancedKeyboardDelegate
 
-- (UIToolbar *)getToolbarWithPreviousEnabled:(BOOL)previousEnabled nextEnabled:(BOOL)nextEnabled doneEnabled:(BOOL)doneEnabled
+- (UIToolbar *)configureToolbarWithPreviousEnabled:(BOOL)previousEnabled nextEnabled:(BOOL)nextEnabled doneEnabled:(BOOL)doneEnabled
 {
     // Create toolbar
     UIToolbar *toolbar = [[UIToolbar alloc] init];

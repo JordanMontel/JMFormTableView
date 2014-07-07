@@ -20,6 +20,6 @@
 @property (nonatomic, strong) UIColor *colorButtons;
 
 // Custom Methods
-- (UIToolbar *)getToolbarWithPreviousEnabled:(BOOL)previousEnabled nextEnabled:(BOOL)nextEnabled doneEnabled:(BOOL)doneEnabled;
+- (UIToolbar *)configureToolbarWithPreviousEnabled:(BOOL)previousEnabled nextEnabled:(BOOL)nextEnabled doneEnabled:(BOOL)doneEnabled;
 
 @end

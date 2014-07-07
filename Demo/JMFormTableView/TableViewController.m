@@ -137,11 +137,11 @@
 
     // Set keyboard toolbar
     if (_currentIndex == 0)
-        [textField setInputAccessoryView:[self.enhancedKeyboard getToolbarWithPreviousEnabled:NO nextEnabled:YES doneEnabled:YES]];
+        [textField setInputAccessoryView:[self.enhancedKeyboard configureToolbarWithPreviousEnabled:NO nextEnabled:YES doneEnabled:YES]];
     else if (_currentIndex == _data.count-1)
-        [textField setInputAccessoryView:[self.enhancedKeyboard getToolbarWithPreviousEnabled:YES nextEnabled:NO doneEnabled:YES]];
+        [textField setInputAccessoryView:[self.enhancedKeyboard configureToolbarWithPreviousEnabled:YES nextEnabled:NO doneEnabled:YES]];
     else
-        [textField setInputAccessoryView:[self.enhancedKeyboard getToolbarWithPreviousEnabled:YES nextEnabled:YES doneEnabled:YES]];
+        [textField setInputAccessoryView:[self.enhancedKeyboard configureToolbarWithPreviousEnabled:YES nextEnabled:YES doneEnabled:YES]];
 }
 
 #pragma mark - JMEnhancedKeyboardDelegate
