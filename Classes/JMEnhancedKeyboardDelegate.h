@@ -18,6 +18,7 @@
 @property (nonatomic, strong) id <JMEnhancedKeyboardDelegate> delegate;
 @property (nonatomic, strong) UIColor *colorBackgroundToolBar;
 @property (nonatomic, strong) UIColor *colorButtons;
+@property (nonatomic, assign) BOOL isTranslucent;
 
 // Custom Methods
 - (UIToolbar *)configureToolbarWithPreviousEnabled:(BOOL)previousEnabled nextEnabled:(BOOL)nextEnabled doneEnabled:(BOOL)doneEnabled;

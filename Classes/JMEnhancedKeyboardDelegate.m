@@ -38,10 +38,11 @@
     
     toolbar.items = toolbarItems;
     
-    // Color
+    // Configuration
     toolbar.tintColor       = _colorButtons;
     toolbar.backgroundColor = _colorBackgroundToolBar;
-    
+    toolbar.translucent     = _isTranslucent;
+
     return toolbar;
 }
 
