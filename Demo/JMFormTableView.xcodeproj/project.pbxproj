@@ -26,6 +26,7 @@
 		9EED40D419658A4600997802 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EED40D319658A4600997802 /* Data.plist */; };
 		9EED41241966F0B900997802 /* JMEnhancedKeyboardDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EED41211966F0B900997802 /* JMEnhancedKeyboardDelegate.m */; };
 		9EED41251966F0B900997802 /* TextFieldFormElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EED41231966F0B900997802 /* TextFieldFormElement.m */; };
+		9EED412C196A836A00997802 /* JMKeyboardConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EED412B196A836A00997802 /* JMKeyboardConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		9EED41211966F0B900997802 /* JMEnhancedKeyboardDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMEnhancedKeyboardDelegate.m; sourceTree = "<group>"; };
 		9EED41221966F0B900997802 /* TextFieldFormElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldFormElement.h; sourceTree = "<group>"; };
 		9EED41231966F0B900997802 /* TextFieldFormElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldFormElement.m; sourceTree = "<group>"; };
+		9EED412A196A836A00997802 /* JMKeyboardConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMKeyboardConfiguration.h; sourceTree = "<group>"; };
+		9EED412B196A836A00997802 /* JMKeyboardConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMKeyboardConfiguration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				9EED41261966F0BE00997802 /* JMEnhancedKeyboardDelegate */,
+				9EED412D196A836C00997802 /* JMKeyboardConfiguration */,
 				9EED41271966F0CC00997802 /* TextFieldFormElement */,
 			);
 			name = Classes;
@@ -220,6 +224,15 @@
 				9EED41231966F0B900997802 /* TextFieldFormElement.m */,
 			);
 			name = TextFieldFormElement;
+			sourceTree = "<group>";
+		};
+		9EED412D196A836C00997802 /* JMKeyboardConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				9EED412A196A836A00997802 /* JMKeyboardConfiguration.h */,
+				9EED412B196A836A00997802 /* JMKeyboardConfiguration.m */,
+			);
+			name = JMKeyboardConfiguration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EED412C196A836A00997802 /* JMKeyboardConfiguration.m in Sources */,
 				9EED41241966F0B900997802 /* JMEnhancedKeyboardDelegate.m in Sources */,
 				9EED40CC1965894C00997802 /* TableCell.m in Sources */,
 				9EED41251966F0B900997802 /* TextFieldFormElement.m in Sources */,
