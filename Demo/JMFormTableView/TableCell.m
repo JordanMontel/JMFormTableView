@@ -7,6 +7,7 @@
 //
 
 #import "TableCell.h"
+#import "JMKeyboardConfiguration.h"
 
 @interface TableCell ()
 
@@ -25,6 +26,13 @@
     
     // Display label
 	_labelTitle.text = [aDic objectForKey:PLIST_TITLE_KEY];
+    
+    NSLog(@"%@", [aDic objectForKey:@"returnKeyType"]);
+    
+    // Keyboard configurations
+    _textField.keyboardAppearance = [JMKeyboardConfiguration keyboardAppearanceFromString:[aDic objectForKey:@"keyboardAppearance"]];
+    _textField.keyboardType  = [JMKeyboardConfiguration keyboardTypeFromString:[aDic objectForKey:@"keyboardType"]];
+    _textField.returnKeyType = [JMKeyboardConfiguration returnKeyTypeFromString:[aDic objectForKey:@"returnKeyType"]];
 }
 
 @end

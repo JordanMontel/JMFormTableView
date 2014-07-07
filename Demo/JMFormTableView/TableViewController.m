@@ -34,7 +34,7 @@
 	{
 		// Custom initialization here
 	}
-	
+
 	return self;
 }
 
@@ -129,7 +129,7 @@
     if (_currentIndex == 0)
     {
         // Set index
-        _currentIndex = [[cell.currentData objectForKey:@"uid"] integerValue];
+        _currentIndex = [[self.tableView indexPathForCell:cell] row];
         
         // Scroll to index
         [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:_currentIndex inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
