@@ -25,14 +25,12 @@
     _currentData     = aDic;
     
     // Display label
-	_labelTitle.text = [aDic objectForKey:PLIST_TITLE_KEY];
-    
-    NSLog(@"%@", [aDic objectForKey:@"returnKeyType"]);
-    
+	_labelTitle.text = [aDic objectForKey:TITLE_KEY];
+        
     // Keyboard configurations
-    _textField.keyboardAppearance = [JMKeyboardConfiguration keyboardAppearanceFromString:[aDic objectForKey:@"keyboardAppearance"]];
-    _textField.keyboardType  = [JMKeyboardConfiguration keyboardTypeFromString:[aDic objectForKey:@"keyboardType"]];
-    _textField.returnKeyType = [JMKeyboardConfiguration returnKeyTypeFromString:[aDic objectForKey:@"returnKeyType"]];
+    _textField.keyboardAppearance = [JMKeyboardConfiguration keyboardAppearanceFromString:[aDic objectForKey:KEYBOARD_APPEARANCE]];
+    _textField.keyboardType  = [JMKeyboardConfiguration keyboardTypeFromString:[aDic objectForKey:KEYBOARD_TYPE_KEY]];
+    _textField.returnKeyType = [JMKeyboardConfiguration returnKeyTypeFromString:[aDic objectForKey:KEYBOARD_RETURN_TYPE_KEY]];
 }
 
 @end

@@ -10,9 +10,10 @@
 #define TableCell_HEIGHT 44
 #define TableCell_XIB    @"TableCell"
 
-#define PLIST_TITLE_KEY                @"title"
-#define PLIST_KEYBOARD_TYPE_KEY        @"keyboardType"
-#define PLIST_KEYBOARD_RETURN_TYPE_KEY @"keyboardReturnKeyType"
+#define TITLE_KEY                @"title"
+#define KEYBOARD_APPEARANCE      @"keyboardAppearance"
+#define KEYBOARD_TYPE_KEY        @"keyboardType"
+#define KEYBOARD_RETURN_TYPE_KEY @"returnKeyType"
 
 @interface TableCell : UITableViewCell
 
