@@ -126,14 +126,11 @@
     // Current cell
     TableCell *cell = (TableCell *)textField.superview.superview.superview;
     
-    if (_currentIndex == 0)
-    {
-        // Set index
-        _currentIndex = [[self.tableView indexPathForCell:cell] row];
-        
-        // Scroll to index
-        [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:_currentIndex inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
-    }
+    // Set index
+    _currentIndex = [[self.tableView indexPathForCell:cell] row];
+    
+    // Scroll to index
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:_currentIndex inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
 
     // Set keyboard toolbar
     if (_currentIndex == 0)
